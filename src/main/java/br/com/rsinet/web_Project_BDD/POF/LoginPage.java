@@ -5,8 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import br.com.rsinet.web_Project_BDD.Utilitys.DriverFactory;
+
 public class LoginPage {
 
+	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -43,9 +46,12 @@ public class LoginPage {
 	public WebElement getSingIn(){
 		return singIn;
 	}
+	
 
 	public String getUsuarioLogado() {
-		return usuarioLogado.getText();
+		usuarioLogado.getText();
+		return DriverFactory.driver.getPageSource();
 		
 	}
+	
 }

@@ -1,29 +1,24 @@
 package br.com.rsinet.web_Project_BDD.TestSteps;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import br.com.rsinet.web_Project_BDD.POF.CompraPage;
 import br.com.rsinet.web_Project_BDD.POF.LoginPage;
+import br.com.rsinet.web_Project_BDD.Utilitys.Espera;
 import br.com.rsinet.web_Project_BDD.Utilitys.TestContext;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
 public class CompraSteps {
-	private WebDriver driver;
-	private WebDriverWait wait;
 	private TestContext testContext;
 	private CompraPage compra;
 	private LoginPage login;
+	private Espera espera;
 
 	public CompraSteps(TestContext context) {
 		testContext = context;
 		compra = testContext.getPageObjectFactory().getCompraPage();
 		login = testContext.getPageObjectFactory().getLoginPage();
-		driver = testContext.getDriverFactory().iniciaNavegador();
-		wait = new WebDriverWait(driver, 50);
+		espera = testContext.getPageObjectFactory().getEsperaPage();
 	}
 
 	@Dado("^que estou logado no advantagedemo$")
@@ -31,13 +26,13 @@ public class CompraSteps {
 		login.getLinkLogin();
 		login.getNomeUsuario();
 		login.getSenha();
-		wait.until(ExpectedConditions.elementToBeClickable(login.getSingIn())).click();
-//		Assert.assertTrue(login.getUsuarioLogado().contains("porcaria"));
+		espera.ate(login.getSingIn());
+		System.out.println("usuario" + login.getUsuarioLogado());
+//		Assert.assertTrue(login.getUsuarioLogado().contains("UsuarioTeste"));
 	}
 
 	@Quando("^eu escolher um topico$")
 	public void eu_escolher_um_topico() throws InterruptedException {
-		Thread.sleep(2000);
 		compra.getItem();
 
 	}
@@ -45,14 +40,13 @@ public class CompraSteps {
 	@Quando("^clicar em um produto$")
 	public void clicar_em_um_produto() {
 		compra.getProdutoEscolhido();
-
+		compra.getAdcAoCarrinho();
+		compra.getChkOutPopUp();
+		espera.ate(compra.getBtnNextPage());
 	}
 
 	@Entao("^efetuar a compra$")
 	public void efetuar_a_compra() throws InterruptedException {
-		compra.getAdcAoCarrinho();
-		compra.getChkOutPopUp();
-		wait.until(ExpectedConditions.elementToBeClickable(compra.getBtnNextPage())).click();;
 //		compra.getBtnNextPage();
 		compra.getUsuarioSafePay();
 		compra.getSenhaSafePay();

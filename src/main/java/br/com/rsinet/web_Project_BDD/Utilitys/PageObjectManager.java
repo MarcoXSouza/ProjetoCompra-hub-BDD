@@ -10,6 +10,7 @@ public class PageObjectManager {
 
 	private LoginPage loginPage;
 	private CompraPage compraPage;
+	private Espera espera;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -21,6 +22,10 @@ public class PageObjectManager {
 
 	public CompraPage getCompraPage() {
 		return (compraPage == null) ? compraPage = new CompraPage(driver) : compraPage;
+	}
+
+	public Espera getEsperaPage() {
+		return (espera == null) ? espera = new Espera(driver) : espera;
 	}
 
 }
