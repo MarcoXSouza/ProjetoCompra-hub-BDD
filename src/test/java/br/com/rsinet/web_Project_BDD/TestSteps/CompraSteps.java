@@ -4,6 +4,8 @@ import br.com.rsinet.web_Project_BDD.POF.CompraPage;
 import br.com.rsinet.web_Project_BDD.POF.LoginPage;
 import br.com.rsinet.web_Project_BDD.POF.PagamentoPage;
 import br.com.rsinet.web_Project_BDD.Utilitys.AcoesUtils;
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 import br.com.rsinet.web_Project_BDD.Utilitys.TestContext;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
@@ -16,11 +18,12 @@ public class CompraSteps {
 	private AcoesUtils acoes;
 	private PagamentoPage pagamento;
 
-	public CompraSteps(TestContext context) {
+	public CompraSteps(TestContext context) throws Exception {
 		testContext = context;
 		compra = testContext.getPageObjectFactory().getCompraPage();
 		login = testContext.getPageObjectFactory().getLoginPage();
 		acoes = testContext.getPageObjectFactory().getEsperaPage();
+		ExcelUtils.setExcelFile(ExcelFile.file, "CompraBDD");
 	}
 
 	@Dado("^que estou logado no advantagedemo$")

@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
+
 public class PagamentoPage {
 	public PagamentoPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -29,12 +32,12 @@ public class PagamentoPage {
 
 	public void getSenhaSafePay() {
 		senhaSafePay.clear();
-		senhaSafePay.sendKeys("aA123");
+		senhaSafePay.sendKeys(ExcelUtils.getCellData(2, 3));
 	}
 
 	public void getUsuarioSafePay() {
 		usuarioSafePay.clear();
-		usuarioSafePay.sendKeys("marcos");
+		usuarioSafePay.sendKeys(ExcelUtils.getCellData(2, 2));
 	}
 
 	public void getPagar() {

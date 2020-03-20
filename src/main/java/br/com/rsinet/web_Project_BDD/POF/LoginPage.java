@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.web_Project_BDD.Utilitys.DriverFactory;
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
+import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 
 public class LoginPage {
-
-	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -35,19 +35,18 @@ public class LoginPage {
 
 	public void getNomeUsuario() {
 		nomeUsuario.click();
-		nomeUsuario.sendKeys("UsuarioTeste");
+		nomeUsuario.sendKeys(ExcelUtils.getCellData(2, 0));
 	}
 
 	public void getSenha() {
 		senha.click();
-		senha.sendKeys("aA12");
+		senha.sendKeys(ExcelUtils.getCellData(2, 1));
 	}
 
 	public WebElement getSingIn(){
 		return singIn;
 	}
 	
-
 	public String getUsuarioLogado() {
 		usuarioLogado.getText();
 		return DriverFactory.driver.getPageSource();
