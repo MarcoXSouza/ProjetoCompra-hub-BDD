@@ -56,20 +56,22 @@ public class CompraPage {
 		chkOutPopUp.click();
 	}
 
-//	public WebElement getBtnNext() {
-//		return btnNext;
-//	}
+	public WebElement getBtnNext() {
+		return btnNext;
+	}
 
 	public void getSalvarDados() {
 		salvarDados.click();
 	}
 
 	public void getSenhaSafePay() {
-		senhaSafePay.click();
+		senhaSafePay.clear();
+		senhaSafePay.sendKeys("aA123");
 	}
 
 	public void getUsuarioSafePay() {
-		usuarioSafePay.click();
+		usuarioSafePay.clear();
+		usuarioSafePay.sendKeys("marcos");
 	}
 
 	public void getPagar() {
@@ -77,7 +79,6 @@ public class CompraPage {
 	}
 
 	public WebElement getBtnNextPage() {
-		return btnNext;
-//		btnNextPage.click();
+		return btnNextPage;
 	}
 }
