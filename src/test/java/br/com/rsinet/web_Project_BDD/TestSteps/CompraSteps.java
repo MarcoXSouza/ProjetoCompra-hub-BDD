@@ -2,6 +2,7 @@ package br.com.rsinet.web_Project_BDD.TestSteps;
 
 import br.com.rsinet.web_Project_BDD.POF.CompraPage;
 import br.com.rsinet.web_Project_BDD.POF.LoginPage;
+import br.com.rsinet.web_Project_BDD.POF.PagamentoPage;
 import br.com.rsinet.web_Project_BDD.Utilitys.AcoesUtils;
 import br.com.rsinet.web_Project_BDD.Utilitys.TestContext;
 import cucumber.api.java.pt.Dado;
@@ -13,6 +14,7 @@ public class CompraSteps {
 	private CompraPage compra;
 	private LoginPage login;
 	private AcoesUtils acoes;
+	private PagamentoPage pagamento;
 
 	public CompraSteps(TestContext context) {
 		testContext = context;
@@ -45,10 +47,10 @@ public class CompraSteps {
 
 	@Entao("^efetuar a compra$")
 	public void efetuar_a_compra() throws InterruptedException {
-		compra.getUsuarioSafePay();
-		compra.getSenhaSafePay();
-		compra.getSalvarDados();
-		compra.getPagar();
+		pagamento.getUsuarioSafePay();
+		pagamento.getSenhaSafePay();
+		pagamento.getSalvarDados();
+		pagamento.getPagar();
 
 	}
 

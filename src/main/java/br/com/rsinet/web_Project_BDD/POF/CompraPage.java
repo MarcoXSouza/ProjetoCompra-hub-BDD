@@ -28,17 +28,6 @@ public class CompraPage {
 	@FindBy(id = "next_btn")
 	private WebElement btnNextPage;
 
-	@FindBy(name = "save_safepay")
-	private WebElement salvarDados;
-
-	@FindBy(name = "safepay_password")
-	private WebElement senhaSafePay;
-
-	@FindBy(name = "safepay_username")
-	private WebElement usuarioSafePay;
-
-	@FindBy(id = "pay_now_btn_SAFEPAY")
-	private WebElement pagar;
 
 	public void getItem() {
 		item.click();
@@ -54,28 +43,6 @@ public class CompraPage {
 
 	public void getChkOutPopUp() {
 		chkOutPopUp.click();
-	}
-
-	public WebElement getBtnNext() {
-		return btnNext;
-	}
-
-	public void getSalvarDados() {
-		salvarDados.click();
-	}
-
-	public void getSenhaSafePay() {
-		senhaSafePay.clear();
-		senhaSafePay.sendKeys("aA123");
-	}
-
-	public void getUsuarioSafePay() {
-		usuarioSafePay.clear();
-		usuarioSafePay.sendKeys("marcos");
-	}
-
-	public void getPagar() {
-		pagar.click();
 	}
 
 	public WebElement getBtnNextPage() {

@@ -20,10 +20,6 @@ public class AcoesUtils {
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 	
-	public void scroll() {
-        js.executeScript("window.scrollBy(0,1000)");
-	}
-
 	public void clicaNext(WebElement element) {
 		js.executeScript("arguments[0].click();", element);
 	}
