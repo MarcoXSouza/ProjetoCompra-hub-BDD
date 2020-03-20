@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
+import br.com.rsinet.web_Project_BDD.Utilitys.DriverFactory;
 import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 
 public class PagamentoPage {
@@ -25,23 +25,28 @@ public class PagamentoPage {
 	@FindBy(id = "pay_now_btn_SAFEPAY")
 	private WebElement pagar;
 
-	
 	public void getSalvarDados() {
 		salvarDados.click();
 	}
 
+	public void getUsuarioSafePay() {
+		usuarioSafePay.click();
+		usuarioSafePay.clear();
+		usuarioSafePay.sendKeys(ExcelUtils.getCellData(2, 2));
+	}
+	
 	public void getSenhaSafePay() {
+		senhaSafePay.click();
 		senhaSafePay.clear();
 		senhaSafePay.sendKeys(ExcelUtils.getCellData(2, 3));
 	}
 
-	public void getUsuarioSafePay() {
-		usuarioSafePay.clear();
-		usuarioSafePay.sendKeys(ExcelUtils.getCellData(2, 2));
-	}
-
 	public void getPagar() {
 		pagar.click();
+	}
+
+	public String sucesso() {
+		return DriverFactory.driver.getCurrentUrl();
 	}
 
 }

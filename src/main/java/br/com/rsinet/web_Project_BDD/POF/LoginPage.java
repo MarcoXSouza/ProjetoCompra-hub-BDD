@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import br.com.rsinet.web_Project_BDD.Utilitys.DriverFactory;
-import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
 import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 
 public class LoginPage {
@@ -26,7 +24,7 @@ public class LoginPage {
 	@FindBy(id = "sign_in_btnundefined")
 	private WebElement singIn;
 
-	@FindBy(xpath = "//*[@id=\"menuUserLink\"]/span")
+	@FindBy(xpath = "//span[@class='hi-user containMiniTitle ng-binding']")
 	private WebElement usuarioLogado;
 
 	public void getLinkLogin() {
@@ -48,8 +46,7 @@ public class LoginPage {
 	}
 	
 	public String getUsuarioLogado() {
-		usuarioLogado.getText();
-		return DriverFactory.driver.getPageSource();
+		return usuarioLogado.getText();
 		
 	}
 	

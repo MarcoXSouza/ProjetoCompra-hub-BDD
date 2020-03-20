@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 20, 2020 03:13:23 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 20, 2020 04:14:42 AM</span>
 				</a>
 			</li>
 			<li>
@@ -78,7 +78,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -141,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>6</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>6</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -177,31 +178,87 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Fazer compra de um produto</span>
-						<span class='test-time'>Mar 20, 2020 03:13:23 AM</span>
+						<span class='test-time'>Mar 20, 2020 04:14:42 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 20, 2020 03:13:23 AM</span>
-	<span class='label end-time'>Mar 20, 2020 03:13:47 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+271ms</span>
+	<span class='label start-time'>Mar 20, 2020 04:14:42 AM</span>
+	<span class='label end-time'>Mar 20, 2020 04:15:25 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+783ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario: Efetuar a compra com sucesso</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+799ms</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:02 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 20s+58ms</span>
 						<span class='test-status right fail'>fail</span>
 								<span class='category label white-text'>@CompraSucesso</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf fail' status='fail' test-id='3'>
+				<li class='node level-2 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Dado que estou logado no advantagedemo</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+91ms</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:14:56 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+495ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:14:56 AM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Quando eu escolher um topico</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:14:57 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+288ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:14:57 AM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf fail' status='fail' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>E clicar em um produto</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:02 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+36ms</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
@@ -217,162 +274,37 @@
 										<tbody>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>3:13:35 AM</td>
-													<td class='step-details'><textarea>org.picocontainer.PicoCompositionException: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:353)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-	at ✽.Dado que estou logado no advantagedemo(Compra.feature:6)
-Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils.setExcelFile(ExcelUtils.java:17)
-	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.<init>(CompraSteps.java:26)
+													<td class='timestamp'>4:15:02 AM</td>
+													<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"HP Roar Wireless Speaker"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1508', ip: '192.168.0.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MARCOS~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: abdaf4a108248b619e79b59015e476e6
+*** Element info: {Using=link text, value=HP Roar Wireless Speaker}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-</textarea></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='4'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Quando eu escolher um topico</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:35 AM</td>
-													<td class='step-details'>skipped</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='5'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>E clicar em um produto</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:35 AM</td>
-													<td class='step-details'>skipped</td>
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at br.com.rsinet.web_Project_BDD.POF.CompraPage.getProdutoEscolhido(CompraPage.java:37)
+	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.clicar_em_um_produto(CompraSteps.java:48)
+	at ✽.E clicar em um produto(Compra.feature:8)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
@@ -382,8 +314,8 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 				<li class='node level-2 leaf skip' status='skip' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entao efetuar a compra</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:35 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:02 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+2ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
@@ -399,7 +331,7 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 										<tbody>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:35 AM</td>
+													<td class='timestamp'>4:15:02 AM</td>
 													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
@@ -412,21 +344,21 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 				</li>
 						</ul>
 				</li>
-				<li class='node level-1  fail' status='fail' test-id='7'>
+				<li class='node level-1  pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario: Não efetuar compra</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:47 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+532ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:25 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 21s+476ms</span>
+						<span class='test-status right pass'>pass</span>
 								<span class='category label white-text'>@CompraFalha</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf fail' status='fail' test-id='8'>
+				<li class='node level-2 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Dado que estou logado no advantagedemo</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:47 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+3ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:17 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+679ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -439,120 +371,22 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>3:13:47 AM</td>
-													<td class='step-details'><textarea>org.picocontainer.PicoCompositionException: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:353)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-	at ✽.Dado que estou logado no advantagedemo(Compra.feature:13)
-Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils.setExcelFile(ExcelUtils.java:17)
-	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.<init>(CompraSteps.java:26)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-</textarea></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:17 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='9'>
+				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Quando eu escolher um topico</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:47 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:18 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+252ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -565,22 +399,22 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:47 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:18 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='10'>
+				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>E clicar em um produto</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:47 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:25 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+185ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -593,22 +427,22 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:47 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:25 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='11'>
+				<li class='node level-2 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entao nao efetuar a compra</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 03:13:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 20, 2020 04:15:25 AM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -621,10 +455,10 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:13:47 AM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:25 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -714,7 +548,7 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 20, 2020 03:13:24 AM</td>
+										<td>Mar 20, 2020 04:14:42 AM</td>
 										<td class='linked' test-id='2'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -727,13 +561,13 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 					<div class='category-heading'>
 						<span class='category-name'>@CompraFalha</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -748,9 +582,9 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 20, 2020 03:13:36 AM</td>
+										<td>Mar 20, 2020 04:15:03 AM</td>
 										<td class='linked' test-id='7'>Fazer compra de um produto.Scenario: Não efetuar compra</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -796,8 +630,8 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.picocontainer.PicoCompositionException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -811,210 +645,38 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 20, 2020 03:13:35 AM</td>
-                                                        <td class='linked' test-id='3'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso.Dado que estou logado no advantagedemo</td>
-                                                        <td><pre><textarea>org.picocontainer.PicoCompositionException: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:353)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-	at ✽.Dado que estou logado no advantagedemo(Compra.feature:6)
-Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils.setExcelFile(ExcelUtils.java:17)
-	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.<init>(CompraSteps.java:26)
+                                                        <td>Mar 20, 2020 04:14:57 AM</td>
+                                                        <td class='linked' test-id='5'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso.E clicar em um produto</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"HP Roar Wireless Speaker"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1508', ip: '192.168.0.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MARCOS~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: abdaf4a108248b619e79b59015e476e6
+*** Element info: {Using=link text, value=HP Roar Wireless Speaker}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-</textarea></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mar 20, 2020 03:13:47 AM</td>
-                                                        <td class='linked' test-id='8'>Fazer compra de um produto.Scenario: Não efetuar compra.Dado que estou logado no advantagedemo</td>
-                                                        <td><pre><textarea>org.picocontainer.PicoCompositionException: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:353)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-	at ✽.Dado que estou logado no advantagedemo(Compra.feature:13)
-Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompra.xlsx (O sistema não pode encontrar o caminho especificado)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at java.io.FileInputStream.<init>(FileInputStream.java:93)
-	at br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils.setExcelFile(ExcelUtils.java:17)
-	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.<init>(CompraSteps.java:26)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at cucumber.runtime.java.picocontainer.PicoFactory.getInstance(PicoFactory.java:40)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
-</textarea></pre></td>
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at br.com.rsinet.web_Project_BDD.POF.CompraPage.getProdutoEscolhido(CompraPage.java:37)
+	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.clicar_em_um_produto(CompraSteps.java:48)
+	at ✽.E clicar em um produto(Compra.feature:8)
+</pre></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -1052,19 +714,19 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 20, 2020 03:13:23 AM</div>
+					<div class='panel-lead'>Mar 20, 2020 04:14:42 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 20, 2020 03:13:48 AM</div>
+			 		<div class='panel-lead'>Mar 20, 2020 04:15:26 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>24,251ms</div>
+					<div class='panel-lead'>43,754ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1090,11 +752,11 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 						</tr>
 						<tr>
 							<td>@CompraFalha</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1110,22 +772,22 @@ Caused by: java.io.FileNotFoundException: src\main\java\resources\MassaProjCompr
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 2,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 6,
-				exceptionsParent: 8,
+				skipParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 0,
-				failChild: 2,
+				passChild: 6,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 6,
+				skipChild: 1,
 				infoChild: 0,
-				exceptionsChild: 8,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

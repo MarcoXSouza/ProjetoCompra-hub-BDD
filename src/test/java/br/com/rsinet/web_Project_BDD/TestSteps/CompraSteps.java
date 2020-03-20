@@ -1,10 +1,12 @@
 package br.com.rsinet.web_Project_BDD.TestSteps;
 
+import org.junit.Assert;
+
 import br.com.rsinet.web_Project_BDD.POF.CompraPage;
 import br.com.rsinet.web_Project_BDD.POF.LoginPage;
 import br.com.rsinet.web_Project_BDD.POF.PagamentoPage;
 import br.com.rsinet.web_Project_BDD.Utilitys.AcoesUtils;
-import br.com.rsinet.web_Project_BDD.Utilitys.ExcelFile;
+import br.com.rsinet.web_Project_BDD.Utilitys.Constantes;
 import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 import br.com.rsinet.web_Project_BDD.Utilitys.TestContext;
 import cucumber.api.java.pt.Dado;
@@ -23,7 +25,7 @@ public class CompraSteps {
 		compra = testContext.getPageObjectFactory().getCompraPage();
 		login = testContext.getPageObjectFactory().getLoginPage();
 		acoes = testContext.getPageObjectFactory().getEsperaPage();
-		ExcelUtils.setExcelFile(ExcelFile.file, "CompraBDD");
+		ExcelUtils.setExcelFile(Constantes.file, "CompraBDD");
 	}
 
 	@Dado("^que estou logado no advantagedemo$")
@@ -32,6 +34,7 @@ public class CompraSteps {
 		login.getNomeUsuario();
 		login.getSenha();
 		acoes.esperaAte(login.getSingIn());
+		Assert.assertTrue(login.getUsuarioLogado().contains(ExcelUtils.getCellData(2, 0)));
 	}
 
 	@Quando("^eu escolher um topico$")
@@ -54,6 +57,8 @@ public class CompraSteps {
 		pagamento.getSenhaSafePay();
 		pagamento.getSalvarDados();
 		pagamento.getPagar();
+//		acoes.esperaAte();
+		Assert.assertTrue(pagamento.sucesso().equals(Constantes.urlSucesso));
 
 	}
 
