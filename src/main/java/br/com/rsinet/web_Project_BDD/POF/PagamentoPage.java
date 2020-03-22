@@ -20,23 +20,24 @@ public class PagamentoPage {
 	private WebElement senhaSafePay;
 
 	@FindBy(name = "safepay_username")
-	private WebElement usuarioSafePay;
+	public WebElement usuarioSafePay;
 
 	@FindBy(id = "pay_now_btn_SAFEPAY")
 	private WebElement pagar;
+
+	@FindBy(xpath = "//*[@id=\"paymentMethod\"]/div/div[2]/sec-form/sec-view[2]/div/label")
+	private WebElement msgSenhaInvalida;
 
 	public void getSalvarDados() {
 		salvarDados.click();
 	}
 
 	public void getUsuarioSafePay() {
-		usuarioSafePay.click();
 		usuarioSafePay.clear();
 		usuarioSafePay.sendKeys(ExcelUtils.getCellData(2, 2));
 	}
-	
+
 	public void getSenhaSafePay() {
-		senhaSafePay.click();
 		senhaSafePay.clear();
 		senhaSafePay.sendKeys(ExcelUtils.getCellData(2, 3));
 	}
@@ -47,6 +48,14 @@ public class PagamentoPage {
 
 	public String sucesso() {
 		return DriverFactory.driver.getCurrentUrl();
+	}
+
+	public void getSenhaSafePayInvalida() {
+		senhaSafePay.sendKeys(ExcelUtils.getCellData(2, 3));
+	}
+
+	public String getMsgSenhaInvalida() {
+		return msgSenhaInvalida.getText();
 	}
 
 }

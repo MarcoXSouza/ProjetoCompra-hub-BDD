@@ -25,6 +25,7 @@ public class CompraSteps {
 		compra = testContext.getPageObjectFactory().getCompraPage();
 		login = testContext.getPageObjectFactory().getLoginPage();
 		acoes = testContext.getPageObjectFactory().getEsperaPage();
+		pagamento = testContext.getPageObjectFactory().getPagamentoPage();
 		ExcelUtils.setExcelFile(Constantes.file, "CompraBDD");
 	}
 
@@ -55,16 +56,16 @@ public class CompraSteps {
 	public void efetuar_a_compra() throws InterruptedException {
 		pagamento.getUsuarioSafePay();
 		pagamento.getSenhaSafePay();
-		pagamento.getSalvarDados();
 		pagamento.getPagar();
-//		acoes.esperaAte();
-		Assert.assertTrue(pagamento.sucesso().equals(Constantes.urlSucesso));
 
 	}
 
 	@Entao("^nao efetuar a compra$")
 	public void nao_efetuar_a_compra() {
-
+		pagamento.getUsuarioSafePay();
+		pagamento.getSenhaSafePayInvalida();
+		pagamento.getSalvarDados();
+		Assert.assertTrue(pagamento.getMsgSenhaInvalida().equals("Use maximum 12 character"));
 	}
 
 }

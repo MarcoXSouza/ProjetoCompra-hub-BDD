@@ -49,5 +49,6 @@ public class LoginPage {
 		return usuarioLogado.getText();
 		
 	}
+
 	
 }

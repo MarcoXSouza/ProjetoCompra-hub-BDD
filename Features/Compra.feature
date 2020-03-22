@@ -12,6 +12,5 @@ Funcionalidade: Fazer compra de um produto
   Cenario: Não efetuar compra
     Dado que estou logado no advantagedemo
     Quando eu escolher um topico
-    E clicar em um produto
+    Quando clicar em um produto
     Entao nao efetuar a compra
-  

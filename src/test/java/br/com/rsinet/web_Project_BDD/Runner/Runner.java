@@ -17,13 +17,13 @@ import cucumber.api.junit.Cucumber;
 		, monochrome = true
 		, dryRun = false
 		, plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\marcos.souza\\Desktop\\Nova pasta\\workspace\\ProjetoCompraBDD\\Report\\report.html"}
-//		, tags = {"@CompraFalha"}
+		, tags = {"@CompraFalha"}
 		)
 
 public class Runner {
 	@AfterClass
 	public static void Report(){
-		Reporter.loadXMLConfig(new File("C:\\Users\\marcos.souza\\Documents\\Marcos\\Java\\ProjetoWebBdd\\ProjetoBDD\\Config.xml"));
+		Reporter.loadXMLConfig(new File("C:\\Users\\marcos.souza\\Desktop\\Nova pasta\\workspace\\ProjetoCompraBDD\\report.xml"));
 	}
 	
 }

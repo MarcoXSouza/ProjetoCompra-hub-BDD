@@ -19,6 +19,10 @@ public class AcoesUtils {
 		wait = new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
+	public void espera(String element){
+		wait = new WebDriverWait(driver, 50);
+		wait.until(ExpectedConditions.urlContains(element));
+	}
 	
 	public void clicaNext(WebElement element) {
 		js.executeScript("arguments[0].click();", element);
