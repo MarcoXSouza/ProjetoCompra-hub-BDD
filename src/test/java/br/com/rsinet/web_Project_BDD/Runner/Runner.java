@@ -16,14 +16,14 @@ import cucumber.api.junit.Cucumber;
 		, glue = "br.com.rsinet.web_Project_BDD.TestSteps"
 		, monochrome = true
 		, dryRun = false
-		, plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\marcos.souza\\Desktop\\Nova pasta\\workspace\\ProjetoCompraBDD\\Report\\report.html"}
-		, tags = {"@CompraSucesso"}
+		, plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\marcos.souza\\Desktop\\Nova pasta (3)\\ProjetoCompra-hub-BDD\\Report\\report.html"}
+//		, tags = {"@CompraSucesso"}
 		)
 
 public class Runner {
 	@AfterClass
 	public static void Report(){
-		Reporter.loadXMLConfig(new File("C:\\Users\\marcos.souza\\Desktop\\Nova pasta\\workspace\\ProjetoCompraBDD\\report.xml"));
+		Reporter.loadXMLConfig(new File("C:\\Users\\marcos.souza\\Desktop\\Nova pasta (3)\\ProjetoCompra-hub-BDD\\report.xml"));
 	}
 	
 }

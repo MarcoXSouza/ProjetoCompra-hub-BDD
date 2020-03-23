@@ -39,6 +39,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -52,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 22, 2020 09:12:10 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 23, 2020 02:52:31 PM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +79,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,6 +94,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@CompraSucesso</a></li>
+					<li><a href='#'>@CompraFalha</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='37.5%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -153,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>4</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='37.5%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -171,35 +175,35 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Fazer compra de um produto</span>
-						<span class='test-time'>Mar 22, 2020 09:12:10 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar 23, 2020 02:52:31 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 22, 2020 09:12:10 PM</span>
-	<span class='label end-time'>Mar 22, 2020 09:12:33 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+424ms</span>
+	<span class='label start-time'>Mar 23, 2020 02:52:31 PM</span>
+	<span class='label end-time'>Mar 23, 2020 02:53:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 41s+929ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  pass' status='pass' test-id='2'>
+				<li class='node level-1  fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Scenario: Efetuar a compra com sucesso</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 22, 2020 09:12:33 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 23s+383ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:52:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+909ms</span>
+						<span class='test-status right fail'>fail</span>
 								<span class='category label white-text'>@CompraSucesso</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='3'>
+				<li class='node level-2 leaf fail' status='fail' test-id='3'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Dado que estou logado no advantagedemo</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 22, 2020 09:12:23 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+497ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:52:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+651ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -212,22 +216,50 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:12:23 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>2:52:45 PM</td>
+													<td class='step-details'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="username" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope in-focus"> is not clickable at point (683, 189). Other element would receive the click: <div class="loader" style="display: block; opacity: 1;">...</div>
+  (Session info: chrome=80.0.3987.149)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1508', ip: '192.168.0.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MARCOS~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fc01cc93379cc040873c555f2f65a49
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at br.com.rsinet.web_Project_BDD.POF.LoginPage.getNomeUsuario(LoginPage.java:35)
+	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.que_estou_logado_no_advantagedemo(CompraSteps.java:35)
+	at ✽.Dado que estou logado no advantagedemo(Compra.feature:6)
+</textarea></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='4'>
+				<li class='node level-2 leaf skip' status='skip' test-id='4'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Quando eu escolher um topico</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 22, 2020 09:12:25 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+318ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:52:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -240,21 +272,91 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:12:25 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:52:45 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='5'>
+				<li class='node level-2 leaf skip' status='skip' test-id='5'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>E clicar em um produto</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 22, 2020 09:12:33 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+36ms</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:52:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:52:45 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Entao efetuar a compra</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:52:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>2:52:45 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Efetuar_a_compra_com_sucesso.png' width='10%' src='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Efetuar_a_compra_com_sucesso.png' data-src='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Efetuar_a_compra_com_sucesso.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-1  pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Scenario: Não efetuar compra</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:53:13 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 27s+81ms</span>
+						<span class='test-status right pass'>pass</span>
+								<span class='category label white-text'>@CompraFalha</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-2 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Dado que estou logado no advantagedemo</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:53:00 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+673ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -270,7 +372,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:12:33 PM</td>
+													<td class='timestamp'>2:53:00 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -278,11 +380,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='6'>
+				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>Entao efetuar a compra</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 22, 2020 09:12:33 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+459ms</span>
+						<h5 class='node-name'>Quando eu escolher um topico</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:53:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+538ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -298,13 +400,69 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:12:33 PM</td>
+													<td class='timestamp'>2:53:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Quando clicar em um produto</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:53:13 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+689ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:53:13 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Entao nao efetuar a compra</h5>
+						<span class="node-time label grey lighten-1 white-text">Mar 23, 2020 02:53:13 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+382ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:53:13 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\marcos.souza\Documents\Marcos\Java\ProjetoWebBdd\ProjetoBDD\Report\Efetuar_a_compra_com_sucesso.png' width='10%' src='C:\Users\marcos.souza\Documents\Marcos\Java\ProjetoWebBdd\ProjetoBDD\Report\Efetuar_a_compra_com_sucesso.png' data-src='C:\Users\marcos.souza\Documents\Marcos\Java\ProjetoWebBdd\ProjetoBDD\Report\Efetuar_a_compra_com_sucesso.png'></li>
+												<li><img data-featherlight='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Não_efetuar_compra.png' width='10%' src='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Não_efetuar_compra.png' data-src='C:\Users\marcos.souza\Desktop\Nova pasta (3)\ProjetoCompra-hub-BDD\Report\Não_efetuar_compra.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -368,6 +526,40 @@
 					<div class='category-heading'>
 						<span class='category-name'>@CompraSucesso</span>
 						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 23, 2020 02:52:31 PM</td>
+										<td class='linked' test-id='2'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@CompraFalha</span>
+						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
 					</div>
@@ -389,8 +581,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 22, 2020 09:12:10 PM</td>
-										<td class='linked' test-id='2'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso</td>
+										<td>Mar 23, 2020 02:52:46 PM</td>
+										<td class='linked' test-id='7'>Fazer compra de um produto.Scenario: Não efetuar compra</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -410,6 +602,95 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 23, 2020 02:52:42 PM</td>
+                                                        <td class='linked' test-id='3'>Fazer compra de um produto.Scenario: Efetuar a compra com sucesso.Dado que estou logado no advantagedemo</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="username" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope in-focus"> is not clickable at point (683, 189). Other element would receive the click: <div class="loader" style="display: block; opacity: 1;">...</div>
+  (Session info: chrome=80.0.3987.149)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RSI1508', ip: '192.168.0.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MARCOS~1.SOU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fc01cc93379cc040873c555f2f65a49
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at br.com.rsinet.web_Project_BDD.POF.LoginPage.getNomeUsuario(LoginPage.java:35)
+	at br.com.rsinet.web_Project_BDD.TestSteps.CompraSteps.que_estou_logado_no_advantagedemo(CompraSteps.java:35)
+	at ✽.Dado que estou logado no advantagedemo(Compra.feature:6)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -419,31 +700,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 22, 2020 09:12:10 PM</div>
+					<div class='panel-lead'>Mar 23, 2020 02:52:31 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 22, 2020 09:12:34 PM</div>
+			 		<div class='panel-lead'>Mar 23, 2020 02:53:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>24,422ms</div>
+					<div class='panel-lead'>42,929ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -460,6 +741,15 @@
 						</tr>
 						<tr>
 							<td>@CompraSucesso</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@CompraFalha</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -481,21 +771,21 @@
 		<script>
 			var statusGroup = {
 				passParent: 4,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 3,
+				exceptionsParent: 4,
 				
 				passChild: 4,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 3,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

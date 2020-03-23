@@ -9,6 +9,7 @@ import br.com.rsinet.web_Project_BDD.Utilitys.DriverFactory;
 import br.com.rsinet.web_Project_BDD.Utilitys.ExcelUtils;
 
 public class PagamentoPage {
+	private WebDriver driver = DriverFactory.driver;
 	public PagamentoPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -63,6 +64,9 @@ public class PagamentoPage {
 
 	public WebElement ajuda() {
 		return ajuda;
+	}
+	public String pageSource() {
+		return driver.getPageSource();
 	}
 
 }

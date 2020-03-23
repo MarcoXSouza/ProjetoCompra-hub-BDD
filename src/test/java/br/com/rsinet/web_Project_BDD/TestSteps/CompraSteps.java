@@ -58,6 +58,7 @@ public class CompraSteps {
 		pagamento.getSenhaSafePay();
 		pagamento.getPagar();
 		acoes.esperaAte(pagamento.ajuda());
+		Assert.assertTrue(pagamento.pageSource().contains("Thank you for buying with Advantage"));
 	}
 
 	@Entao("^nao efetuar a compra$")
