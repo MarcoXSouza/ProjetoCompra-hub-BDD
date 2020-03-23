@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AcoesUtils {
 	private static WebDriverWait wait;
 	private WebDriver driver = DriverFactory.driver;
-	JavascriptExecutor js = (JavascriptExecutor) driver;  
+	private JavascriptExecutor js = (JavascriptExecutor) driver;  
 	
 	public AcoesUtils(WebDriver driver2) {
 		PageFactory.initElements(driver, this);	}

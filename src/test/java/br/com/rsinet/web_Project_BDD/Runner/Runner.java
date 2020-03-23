@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 		, monochrome = true
 		, dryRun = false
 		, plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\marcos.souza\\Desktop\\Nova pasta\\workspace\\ProjetoCompraBDD\\Report\\report.html"}
-		, tags = {"@CompraFalha"}
+		, tags = {"@CompraSucesso"}
 		)
 
 public class Runner {

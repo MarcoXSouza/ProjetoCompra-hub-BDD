@@ -57,7 +57,7 @@ public class CompraSteps {
 		pagamento.getUsuarioSafePay();
 		pagamento.getSenhaSafePay();
 		pagamento.getPagar();
-
+		acoes.esperaAte(pagamento.ajuda());
 	}
 
 	@Entao("^nao efetuar a compra$")

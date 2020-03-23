@@ -28,6 +28,9 @@ public class PagamentoPage {
 	@FindBy(xpath = "//*[@id=\"paymentMethod\"]/div/div[2]/sec-form/sec-view[2]/div/label")
 	private WebElement msgSenhaInvalida;
 
+	@FindBy(id = "menuHelp")
+	private WebElement ajuda;
+
 	public void getSalvarDados() {
 		salvarDados.click();
 	}
@@ -56,6 +59,10 @@ public class PagamentoPage {
 
 	public String getMsgSenhaInvalida() {
 		return msgSenhaInvalida.getText();
+	}
+
+	public WebElement ajuda() {
+		return ajuda;
 	}
 
 }
